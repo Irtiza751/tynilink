@@ -2,12 +2,14 @@ package app.mirtiza.linkservice.models;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Entity
 @Table(name = "links")
 public class Link {
@@ -20,6 +22,6 @@ public class Link {
 
     private String shortUrl;
 
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private Long userId;
 }
