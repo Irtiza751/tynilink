@@ -3,6 +3,8 @@
     <words>
       <w>Linkservice</w>
       <w>Userservice</w>
+      <w>discoveryservice</w>
+      <w>userservice</w>
     </words>
   </dictionary>
 </component>
